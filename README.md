@@ -1,7 +1,4 @@
-# Penilaian Sumatif Akhir Tahun
-## Mapil DevOps XI TJKT 1 - Penilaian Praktek
-### SMKN 1 Banyumas - TA. 2024 2025
-
+# CRUD Siswa
 
 #
 # Cara mendeploy Aplikasi

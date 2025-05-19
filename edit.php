@@ -28,6 +28,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
+    <footer class="text-center mt-0 py-0" style="background-color: DarkSlateGray; color: white;">
+    IP Lokal : <?= $_SERVER['SERVER_ADDR'] ?><br>
+    <?php echo 'IP Public : ' . file_get_contents('http://checkip.amazonaws.com'); ?>
+</footer>
 <?php include 'menu.php'; ?>
 <div class="container mt-4">
         <div style='text-align:center;'>

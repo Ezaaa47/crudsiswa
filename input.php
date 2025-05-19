@@ -26,7 +26,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
 
 <footer class="text-center mt-0 py-0" style="background-color: DarkSlateGray; color: white;">
-    Server IP : <?= $_SERVER['SERVER_ADDR'] ?>
+    IP Lokal : <?= $_SERVER['SERVER_ADDR'] ?><br>
+    <?php echo 'IP Public : ' . file_get_contents('http://checkip.amazonaws.com'); ?>
 </footer>
 
 <?php include 'menu.php'; ?>

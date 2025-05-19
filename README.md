@@ -45,7 +45,7 @@ echo DB_HOST=rds11tjkt1.czt6n8ylfvyb.us-east-1.rds.amazonaws.com >> /var/www/htm
 
 atau bisa dibuat menjadi shell script, misal diberi nama otomatis.sh
 
-###otomatis.sh
+### otomatis.sh
 ```.env
 #!/bin/bash
 sudo apt update -y
@@ -59,7 +59,7 @@ echo DB_NAME=crudsiswa  >> /var/www/html/.env
 echo DB_HOST=rds11tjkt1.czt6n8ylfvyb.us-east-1.rds.amazonaws.com >> /var/www/html/.env
 ```
 
-###cara menjalankan otomatis.sh setidaknya ada 2 cara
+### cara menjalankan otomatis.sh setidaknya ada 2 cara
 1. Dieksekusi langsung
 ```.env
 $ bash otomatis.sh

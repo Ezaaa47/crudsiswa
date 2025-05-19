@@ -66,8 +66,8 @@ $ bash otomatis.sh
 ```
 
 2. Dibuat menjadi executable kemudian dieksekusi
-$ chmod +x otomatis.sh
 ```.env
+$ chmod +x otomatis.sh
 $ ./otomatis.sh
 ```
 

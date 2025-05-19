@@ -41,7 +41,14 @@ echo DB_USER=admin > /var/www/html/.env
 echo DB_PASS=P4ssw0rd123  >> /var/www/html/.env
 echo DB_NAME=crudsiswa  >> /var/www/html/.env
 echo DB_HOST=rds11tjkt1.czt6n8ylfvyb.us-east-1.rds.amazonaws.com >> /var/www/html/.env
+
+sudo apt install openssl
+sudo a2enmod ssl
+sudo a2ensite default-ssl.conf
+sudo systemctl reload apache2
 ```
+
+
 
 atau bisa dibuat menjadi shell script, misal diberi nama otomatis.sh
 
@@ -57,6 +64,10 @@ echo DB_USER=admin > /var/www/html/.env
 echo DB_PASS=P4ssw0rd123  >> /var/www/html/.env
 echo DB_NAME=crudsiswa  >> /var/www/html/.env
 echo DB_HOST=rds11tjkt1.czt6n8ylfvyb.us-east-1.rds.amazonaws.com >> /var/www/html/.env
+sudo apt install openssl
+sudo a2enmod ssl
+sudo a2ensite default-ssl.conf
+sudo systemctl reload apache2
 ```
 
 ### cara menjalankan otomatis.sh setidaknya ada 2 cara
